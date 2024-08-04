@@ -1,4 +1,5 @@
 import math 
+# By taking a new variable as flag help to automatically restart the program whenever the value of flag is true.
 flag = True
 while flag == True:
     x = int(input("Enter first number : "))
@@ -13,6 +14,7 @@ while flag == True:
     elif operator == "**":
         print("The power is : ", x**y)
     elif operator == "//":
+        # when y =0, there will be an error in output stating that denominator can't be zero.
         if y == 0:
             print("Error! The denominator can't be zero.")
             y = int(input("Enter second number : "))
@@ -21,6 +23,7 @@ while flag == True:
         else :
             print("The answer rounded down is : ",x//y)
     elif operator == "ceil":
+        # when y =0, there will be an error in output stating that denominator can't be zero.
         if y == 0:
             print("Error! The denominator can't be zero.")
             y = int(input("Enter second number : "))
@@ -29,6 +32,7 @@ while flag == True:
         else :
             print("The answer rounded up is : ",math.ceil(x/y))
     elif operator == "%":
+        # when y =0, there will be an error in output stating that denominator can't be zero.
         if y == 0:
             print("Error! The denominator can't be zero.")
             y = int(input("Enter second number : "))
@@ -46,6 +50,7 @@ while flag == True:
             print("The ratio is : ", x/y)
     else:
         print("type the correct operator.")
+    # In "c" variable, we will store whether user want to restart the program or not. when value of "c" is yes, The program will restart. 
     c = input("Do you want to continue  (yes or no) : ")
     if c == "yes":
         flag = True
