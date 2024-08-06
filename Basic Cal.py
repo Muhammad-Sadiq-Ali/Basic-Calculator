@@ -4,7 +4,7 @@ flag = True
 while flag == True:
     x = int(input("Enter first number : "))
     y = int(input("Enter second number : "))
-    operator = input("Enter the function you have to performed(-,+,/,//,**,*,ceil, %) : ")
+    operator = input("Enter the function you have to performed(-,+,/,//,**,*,ceil, %, x!, y!) : ")
     if operator == "+":
         print("The sum is : ",x+y)
     elif operator == "-":
@@ -48,6 +48,26 @@ while flag == True:
                 print("The ratio is : ",x/y)
         else : 
             print("The ratio is : ", x/y)
+    elif operator == "x!":
+        if x>0:
+            v = 1
+            for i in range(1, x+1):
+                v *=i 
+            print("The factorial of first number is : ", v)
+        elif x==0:
+            print("The factorial of first number is 0.")
+        else:
+            print("The factorial of negative number doesn't exist.")
+    elif operator == "y!":
+        if y>0:
+            z = 1
+            for i in range(1, y+1):
+                z *=i 
+            print("The factorial of second number is : ", z)
+        elif y==0:
+            print("The factorial of second number is 0.")
+        else:
+            print("The factorial of negative number doesn't exist.")
     else:
         print("type the correct operator.")
     # In "c" variable, we will store whether user want to restart the program or not. when value of "c" is yes, The program will restart. 
