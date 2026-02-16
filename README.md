@@ -1,1 +1,1 @@
-My first ever program that I made without taking help from external source.. It is basically a calculator. We were given this assignment from our coding camp intructor. It performs simple operations like add, subract, multiply etc. 
+My first ever program that I made without taking help from external source.. It is basically a calculator. We were given this assignment from our coding camp instructor. It performs simple operations like add, subract, multiply etc. 
